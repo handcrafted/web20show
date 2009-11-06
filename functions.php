@@ -1,25 +1,26 @@
 <?php
 
-//
-//  Custom Child Theme Functions
-//
+function analytic_footer() { ?>
+  <script type="text/javascript">
+  var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+  document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+  <script type="text/javascript">
+  try {
+  var pageTracker = _gat._getTracker("UA-4556641-7");
+  pageTracker._trackPageview();
+  } catch(err) {}</script>
+<? }
+add_filter ('thematic_after', 'analytic_footer');
 
-// I've included a "commented out" sample function below that'll add a home link to your menu
-// More ideas can be found on "A Guide To Customizing The Thematic Theme Framework" 
-// http://themeshaper.com/thematic-for-wordpress/guide-customizing-thematic-theme-framework/
-
-// Adds a home link to your menu
-// http://codex.wordpress.org/Template_Tags/wp_page_menu
-//function childtheme_menu_args($args) {
-//    $args = array(
-//        'show_home' => 'Home',
-//        'sort_column' => 'menu_order',
-//        'menu_class' => 'menu',
-//        'echo' => true
-//    );
-//	return $args;
-//}
-//add_filter('wp_page_menu_args','childtheme_menu_args');
-
+function childtheme_menu_args($args) {
+    $args = array(
+        'show_home' => 'Blog',
+        'menu_class' => 'menu',
+        'echo' => true
+    );
+	return $args;
+}
+add_filter('wp_page_menu_args', 'childtheme_menu_args');
 
 ?>

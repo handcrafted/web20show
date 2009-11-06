@@ -1,4 +1,5 @@
 require 'compass-wordpress'
+require 'grid-coordinates'
 # Require any additional compass plugins here.
 
 project_type = :stand_alone

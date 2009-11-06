@@ -1,20 +1,12 @@
 /*   
 Theme Name: web20show
-Theme URI: 
-Description: Use this theme to start your Thematic Child Theme development.
-Author: Ian Stewart
-Author URI: http://themeshaper.com/
+Description: The Web 2.0 Show Thematic Child Theme
+Author: Adam Stacoviak
+Author URI: http://adamstacoviak.com/
 Template: thematic
 Version: 1.0
 Tags: Thematic
-.
-Thematic is © Ian Stewart http://themeshaper.com/
-.
 */
 
-/* 
-  if you passed diff compass folder options,
- change these to match your compiled css folder  */
 @import url('css/screen.css') screen;
 @import url('css/print.css') print;
-

@@ -1,4 +1,159 @@
 // Remove these references to Thematic to customize
 @import compass/utilities
+@import blueprint/reset
 @import wordpress/thematic/extensions
-@import wordpress/thematic/styles
+@import extensions
+@import partials
+
+#wrapper
+  +grid-container
+
+#branding
+  margin-bottom: 50px
+  padding-top: 80px
+  text-align: center
+  #blog-title
+    +heading-font
+    font-size: 80px
+    font-weight: bold
+    line-height: 80px
+    letter-spacing: -2px
+    margin-bottom: 25px
+    a
+      color: #000
+      text-decoration: none
+  #blog-description
+    +serif-font
+    color: #555
+    font-size: 16px
+    font-weight: normal
+    line-height: normal
+    letter-spacing: 4px
+
+// Main navigation
+#access
+  +heading-font
+  .skip-link
+    display: none
+  .menu
+    border-bottom: 1px solid #cacaca
+    ul
+      +layout-reset
+      &.sf-menu
+        +global-reset
+        +no-bullets
+        +layout-reset
+        & > li
+          display: inline-block
+          font-size: 14px
+          font-weight: bold
+          margin-right: 5px
+          & > a
+            color: #3366CC
+            display: inline-block
+            line-height: 32px
+            padding: 0 20px
+            &:hover
+              color: #258
+    a
+      text-decoration: none
+
+#main
+  +nested-grid-container
+  margin: 30px 0
+
+#primary
+  position: fixed
+  top: 0
+  left: 0
+  background: #fff
+  background: rgba(255,255,255,0.7)
+  border-top: 5px solid #000
+  border-bottom: 1px solid #d5d5d5
+  font: normal 12px Arial, Helvetica, sans-serif
+  width: 100%
+  z-index: 100
+  ul.xoxo
+    +clearfix
+    +no-bullets
+    +grid-container
+    padding: 5px 0
+    li#search
+      +grid(6)
+      +grid-prefix(2)
+      +grid-suffix(2)
+    h3
+      font-size: 14px
+      margin: 0
+      margin-left: 40px
+      display: inline
+    #searchform
+      display: inline
+      & > div
+        display: inline
+        margin-left: 10px
+      input[type=text]
+        +heading-font
+        font-size: 13px
+        padding: 2px 8px
+
+#content, #secondary, #footer
+  +heading-font
+  a
+    color: #000
+    text-decoration: none
+    &:hover
+      text-decoration: underline
+
+#container
+  +grid(8)
+  #nav-above
+    display: none
+  #nav-below
+    .nav-previous, .nav-next
+      display: inline-block
+    .nav-previous
+      margin-right: 10px
+    .nav-next
+      margin-left: 10px
+  .post
+    border-bottom: 2px solid #cacaca
+    margin-bottom: 50px
+    padding-bottom: 50px
+    .entry-meta
+      margin-bottom: 20px
+    .entry-content
+      .audio-player
+        +float-right
+        background: #fff
+        +border-radius("3px")
+        border: 1px solid #cacaca
+        font-size: 11px
+        padding: 10px
+        margin: 5px 0 10px 20px
+        text-align: left
+        p
+          +layout-reset
+          padding-left: 3px
+        a
+          color: #3366CC
+  .page
+    .entry-content
+      a
+        color: #3366CC
+
+#secondary
+  +grid(2)
+  .xoxo h3
+    font-size: 16px
+    margin-bottom: 0
+  a
+    color: #3366CC
+
+#footer
+  +heading-font
+  font-size: 12px
+  padding: 20px 0
+  text-align: center
+  a
+    font-weight: bold

@@ -23,4 +23,12 @@ function childtheme_menu_args($args) {
 }
 add_filter('wp_page_menu_args', 'childtheme_menu_args');
 
+function childtheme_belowheader() { ?>
+  <ul id="rss_feed">
+    <li>iTunes</li>
+    <li>RSS</li>
+  </ul>
+<? }
+add_filter('thematic_belowheader', 'childtheme_belowheader');
+
 ?>

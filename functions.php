@@ -27,11 +27,11 @@ function childtheme_betweenmainasides() { ?>
 
   <div id="childtheme_primary" class="aside child-main-aside">
     <ul class="xoxo vertical-ads">
-      <li><img src="http://assets0.fusionads.net/pathfinder_2.jpg" /></li>
-      <li><img src="http://assets0.fusionads.net/culturedcode-things-fusion.jpg" /></li>
-      <li><img src="http://assets0.fusionads.net/fusionads_sale_1.jpg" /></li>
-      <li><img src="http://assets0.fusionads.net/mailchimp_2.png" /></li>
-      <li><img src="http://assets0.fusionads.net/cornerstone-ad-change.png" /></li>
+      <li><a href="http://cocoatech.com/"><img src="/wp-content/themes/web20show/images/ads/pathfinder.jpg" /></a></li>
+      <li><a href="http://culturedcode.com/things/"><img src="/wp-content/themes/web20show/images/ads/things.jpg" /></a></li>
+      <li><a href="http://www.blinksale.com/"><img src="/wp-content/themes/web20show/images/ads/blinksale.jpg" /></a></li>
+      <li><a href="http://htmlemailgallery.com/"><img src="/wp-content/themes/web20show/images/ads/htmlemailgallery.png" /></a></li>
+      <li><a href="http://www.thisisaaronslife.com/"><img src="/wp-content/themes/web20show/images/ads/ux_articles.jpg" /></a></li>
     </ul>
   </div>
 

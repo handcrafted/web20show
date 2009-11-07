@@ -6,96 +6,107 @@
 @import partials
 
 #wrapper
-  +grid-container
+  background: #e5e5e5
 
+#header
+  background: #1d1d1d url(/wp-content/themes/web20show/images/header_bg.png) repeat-x left -20px
+  border-top: 5px solid #8b8b8b
 #branding
-  margin-bottom: 50px
-  padding-top: 80px
-  text-align: center
+  +grid-container
+  padding: 15px 0
   #blog-title
-    +heading-font
-    font-size: 80px
-    font-weight: bold
-    line-height: 80px
-    letter-spacing: -2px
-    margin-bottom: 25px
     a
-      color: #000
-      text-decoration: none
+      +grid(6)
+      +grid-prefix(3)
+      +grid-suffix(3)
+      background: url(/wp-content/themes/web20show/images/w2s_logo.png) no-repeat 50% 0
+      display: block
+      height: 94px
+      text-indent: -99999px
   #blog-description
-    +serif-font
-    color: #555
-    font-size: 16px
-    font-weight: normal
-    line-height: normal
-    letter-spacing: 4px
+    display: none
 
 // Main navigation
 #access
   +heading-font
+  +grid-container
   .skip-link
     display: none
   .menu
-    border-bottom: 1px solid #cacaca
-    ul
+    background: #111
+    +border-top-radius("3px")
+    padding: 8px 8px 0 8px
+    ul.sf-menu
+      +global-reset
+      +no-bullets
       +layout-reset
-      &.sf-menu
-        +global-reset
-        +no-bullets
-        +layout-reset
-        & > li
+      & > li
+        display: inline-block
+        font-size: 14px
+        font-weight: bold
+        margin-right: 5px
+        &.current_page_item
+          a
+            background: #fff url(/wp-content/themes/web20show/images/nav_main_current_item_bg.png) repeat-x left top
+            color: #000
+        & > a
+          +border-top-radius("3px")
+          background: #030303 url(/wp-content/themes/web20show/images/nav_main_default_item_bg.png) repeat-x left top
+          color: #fff
           display: inline-block
-          font-size: 14px
-          font-weight: bold
-          margin-right: 5px
-          & > a
-            color: #3366CC
-            display: inline-block
-            line-height: 32px
-            padding: 0 20px
-            &:hover
-              color: #258
+          line-height: 30px
+          padding: 0 30px
+          &:hover
+            background: #fff url(/wp-content/themes/web20show/images/nav_main_current_item_bg.png) repeat-x left top
+            color: #000
     a
       text-decoration: none
 
 #main
-  +nested-grid-container
-  margin: 30px 0
+  +grid-container
+  background: #fff
+  margin-bottom: 30px
+  padding-top: 15px
 
 #primary
+  display: none
   position: fixed
   top: 0
   left: 0
-  background: #fff
-  background: rgba(255,255,255,0.7)
-  border-top: 5px solid #000
-  border-bottom: 1px solid #d5d5d5
+  background: #000
+  background: rgba(0,0,0,0.7)
   font: normal 12px Arial, Helvetica, sans-serif
   width: 100%
   z-index: 100
   ul.xoxo
     +clearfix
     +no-bullets
-    +grid-container
-    padding: 5px 0
+    padding: 5px 0 5px 5px
+    margin-bottom: 0
     li#search
-      +grid(6)
-      +grid-prefix(2)
-      +grid-suffix(2)
+      margin-bottom: 0
     h3
+      display: none !important
+      background: #000
+      background: rgba(0,0,0,0.3)
+      color: #BC0000
       font-size: 14px
       margin: 0
       margin-left: 40px
+      padding: 3px 8px
       display: inline
     #searchform
       display: inline
       & > div
         display: inline
-        margin-left: 10px
       input[type=text]
         +heading-font
+        border: 2px solid #000
         font-size: 13px
-        padding: 2px 8px
+        margin-right: 5px
+        padding: 4px 12px
+      input[type=submit]
+        display: none
 
 #content, #secondary, #footer
   +heading-font
@@ -116,31 +127,76 @@
       margin-right: 10px
     .nav-next
       margin-left: 10px
+  .post, .page
+    margin: 0 20px 50px 20px
+    .entry-title
+      font: 38px 'Yanone Kaffeesatz Regular', Arial, sans-serif
+      line-height: 1.3
+      letter-spacing: 1px
+    .entry-content
+      h3
+        font-size: 18px
+      ul
+        padding-left: 15px
+      ul#archives-page
+        padding-left: 0
+        li.content-column
+          list-style: none
+        ul
+          padding-left: 15px
+      .gigpress-artist-heading
+        background: #f5f5f5
+        border-top: 4px solid #cacaca
+        line-height: normal
+        margin-bottom: 0
+        padding: 5px 0 5px 10px
+      .gigpress-artist-subscriptions
+        display: none
+          
   .post
     border-bottom: 2px solid #cacaca
-    margin-bottom: 50px
     padding-bottom: 50px
     .entry-meta
       margin-bottom: 20px
     .entry-content
       .audio-player
         +float-right
-        background: #fff
+        position: relative
+        background: #eee
         +border-radius("3px")
-        border: 1px solid #cacaca
-        font-size: 11px
+        border: 2px solid #ddd
+        font-size: 10px
         padding: 10px
-        margin: 5px 0 10px 20px
+        margin: 5px 10px 10px 20px
         text-align: left
         p
+          display: none
           +layout-reset
-          padding-left: 3px
+          position: absolute
+          bottom: -30px
+          left: 10px
         a
-          color: #3366CC
+          +border-bottom-radius("3px")
+          background: #ddd url(http://s3.iconfinder.net/data/icons/lynx/16x16/status/audio-volume-low.png) no-repeat 8px 50%
+          display: inline-block
+          line-height: 28px
+          padding: 0 8px
+          padding-left: 26px
+          color: #000
   .page
     .entry-content
       a
         color: #3366CC
+
+#childtheme_primary
+  +grid(2)
+  .vertical-ads
+    li
+      margin-bottom: 8px
+      text-align: center
+      img
+        background: #ddd
+        padding: 5px
 
 #secondary
   +grid(2)

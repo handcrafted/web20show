@@ -23,12 +23,19 @@ function childtheme_menu_args($args) {
 }
 add_filter('wp_page_menu_args', 'childtheme_menu_args');
 
-function childtheme_belowheader() { ?>
-  <ul id="rss_feed">
-    <li>iTunes</li>
-    <li>RSS</li>
-  </ul>
+function childtheme_betweenmainasides() { ?>
+
+  <div id="childtheme_primary" class="aside child-main-aside">
+    <ul class="xoxo vertical-ads">
+      <li><img src="http://assets0.fusionads.net/pathfinder_2.jpg" /></li>
+      <li><img src="http://assets0.fusionads.net/culturedcode-things-fusion.jpg" /></li>
+      <li><img src="http://assets0.fusionads.net/fusionads_sale_1.jpg" /></li>
+      <li><img src="http://assets0.fusionads.net/mailchimp_2.png" /></li>
+      <li><img src="http://assets0.fusionads.net/cornerstone-ad-change.png" /></li>
+    </ul>
+  </div>
+
 <? }
-add_filter('thematic_belowheader', 'childtheme_belowheader');
+add_filter('thematic_belowmainasides', 'childtheme_betweenmainasides');
 
 ?>

@@ -29,6 +29,7 @@ function childtheme_abovemainasides() { ?>
     <ul class="xoxo vertical-feeds">
       <li><a href="http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewPodcast?id=79511655"><img src="wp-content/themes/web20show/images/feed_itunes.png" /></a></li>
       <li><a href="http://feeds.feedburner.com/web20Show"><img src="wp-content/themes/web20show/images/feed_rss.png" /></a></li>
+      <li><a href="http://twitter.com/web20show"><img src="wp-content/themes/web20show/images/feed_twitter.png" /></a></li>
     </ul>
   </div>
 

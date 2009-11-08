@@ -10,7 +10,7 @@
 
 #header
   background: #1d1d1d url(/wp-content/themes/web20show/images/header_bg.png) repeat-x left -20px
-  border-top: 5px solid #8b8b8b
+  border-top: 5px solid #000
 #branding
   +grid-container
   padding: 15px 0
@@ -71,7 +71,7 @@
 #primary
   display: none
   position: fixed
-  top: 0
+  bottom: 0
   left: 0
   background: #000
   background: rgba(0,0,0,0.7)
@@ -211,6 +211,21 @@
     .form-submit
       margin-top: 15px
 
+#childtheme_feeds
+  +global-reset
+  +no-bullets
+  +grid(4)
+  margin-bottom: 20px
+  text-align: center
+  .vertical-feeds
+    +border-radius("5px")
+    background: #eee
+    border: 2px solid #ccc
+    padding: 8px 5px
+    li
+      margin-bottom: 5px
+      &:last-child
+        margin-bottom: 0
 #childtheme_primary
   +grid(2)
   .vertical-ads

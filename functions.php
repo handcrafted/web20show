@@ -23,7 +23,19 @@ function childtheme_menu_args($args) {
 }
 add_filter('wp_page_menu_args', 'childtheme_menu_args');
 
-function childtheme_betweenmainasides() { ?>
+function childtheme_abovemainasides() { ?>
+
+  <div id="childtheme_feeds" class="aside child-main-aside">
+    <ul class="xoxo vertical-feeds">
+      <li><a href="http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewPodcast?id=79511655"><img src="wp-content/themes/web20show/images/feed_itunes.png" /></a></li>
+      <li><a href="http://feeds.feedburner.com/web20Show"><img src="wp-content/themes/web20show/images/feed_rss.png" /></a></li>
+    </ul>
+  </div>
+
+<? }
+add_filter('thematic_abovemainasides', 'childtheme_abovemainasides');
+
+function childtheme_belowmainasides() { ?>
 
   <div id="childtheme_primary" class="aside child-main-aside">
     <ul class="xoxo vertical-ads">
@@ -35,6 +47,6 @@ function childtheme_betweenmainasides() { ?>
   </div>
 
 <? }
-add_filter('thematic_belowmainasides', 'childtheme_betweenmainasides');
+add_filter('thematic_belowmainasides', 'childtheme_belowmainasides');
 
 ?>

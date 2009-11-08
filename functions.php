@@ -27,11 +27,10 @@ function childtheme_betweenmainasides() { ?>
 
   <div id="childtheme_primary" class="aside child-main-aside">
     <ul class="xoxo vertical-ads">
-      <li><a href="http://cocoatech.com/"><img src="/wp-content/themes/web20show/images/ads/pathfinder.jpg" /></a></li>
-      <li><a href="http://culturedcode.com/things/"><img src="/wp-content/themes/web20show/images/ads/things.jpg" /></a></li>
-      <li><a href="http://www.blinksale.com/"><img src="/wp-content/themes/web20show/images/ads/blinksale.jpg" /></a></li>
-      <li><a href="http://htmlemailgallery.com/"><img src="/wp-content/themes/web20show/images/ads/htmlemailgallery.png" /></a></li>
-      <li><a href="http://www.thisisaaronslife.com/"><img src="/wp-content/themes/web20show/images/ads/ux_articles.jpg" /></a></li>
+      <li><a href="https://handcrafted.freshbooks.com/signup/"><img src="http://www.freshbooks.com/images/banners/freshbooks125x125.gif" /></a></li>
+      <li><a href="http://www.highriseHQ.com/?referrer=HANDCRAFTED"><img alt="Highrise" border="0" height="125" src="https://affiliates.37signals.com/images/products/highrise/banner-125x125.png" width="125" /></a></li>
+      <li><a href="http://www.backpackIT.com/?referrer=HANDCRAFTED"><img alt="Backpack" border="0" height="125" src="https://affiliates.37signals.com/images/products/backpack/banner-125x125.png" width="125" /></a></li>
+      <li><a href="http://www.basecampHQ.com/?referrer=HANDCRAFTED"><img alt="Basecamp" border="0" height="125" src="https://affiliates.37signals.com/images/products/basecamp/banner-125x125.png" width="125" /></a></li>
     </ul>
   </div>
 

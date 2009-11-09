@@ -225,12 +225,18 @@
 #childtheme_primary
   +grid(2)
   .vertical-ads
+    +no-bullets
     li
       margin-bottom: 8px
       text-align: center
-      img
+      img, .adblock
         background: #ddd
         padding: 5px
+      .adblock
+        width: 125px
+        margin-left: 1px
+      .adhere
+        +layout-reset
 
 #secondary
   +grid(2)

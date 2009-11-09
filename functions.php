@@ -40,9 +40,24 @@ function childtheme_belowmainasides() { ?>
 
   <div id="childtheme_primary" class="aside child-main-aside">
     <ul class="xoxo vertical-ads">
+      <li>
+        <script type="text/javascript">
+        Vertical1242735 = false;
+        ShowAdHereBanner1242735 = true;
+        RepeatAll1242735 = false;
+        NoFollowAll1242735 = false;
+        BannerStyles1242735 = new Array(
+            "a{display:block;font-size:11px;color:#888;font-family:verdana,sans-serif;margin:0 4px 10px 0;text-align:center;text-decoration:none;overflow:hidden;}",
+            "img{border:0;clear:right;}",
+            "a.adhere{color:#666;font-weight:bold;font-size:12px;border:1px solid #ccc;background:#e7e7e7;text-align:center;}",
+            "a.adhere:hover{border:1px solid #999;background:#ddd;color:#333;}"
+        );
+        document.write(unescape("%3Cscript src='"+document.location.protocol+"//s3.buysellads.com/1242735/1242735.js?v="+Date.parse(new Date())+"' type='text/javascript'%3E%3C/script%3E"));
+        </script>
+      </li>
       <li><a href="https://handcrafted.freshbooks.com/signup/"><img src="http://www.freshbooks.com/images/banners/freshbooks125x125.gif" /></a></li>
       <li><a href="http://www.highriseHQ.com/?referrer=HANDCRAFTED"><img alt="Highrise" border="0" height="125" src="https://affiliates.37signals.com/images/products/highrise/banner-125x125.png" width="125" /></a></li>
-      <li><a href="http://www.backpackIT.com/?referrer=HANDCRAFTED"><img alt="Backpack" border="0" height="125" src="https://affiliates.37signals.com/images/products/backpack/banner-125x125.png" width="125" /></a></li>
+      <!-- <li><a href="http://www.backpackIT.com/?referrer=HANDCRAFTED"><img alt="Backpack" border="0" height="125" src="https://affiliates.37signals.com/images/products/backpack/banner-125x125.png" width="125" /></a></li> -->
       <li><a href="http://www.basecampHQ.com/?referrer=HANDCRAFTED"><img alt="Basecamp" border="0" height="125" src="https://affiliates.37signals.com/images/products/basecamp/banner-125x125.png" width="125" /></a></li>
     </ul>
   </div>

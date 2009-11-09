@@ -65,12 +65,9 @@ function childtheme_belowmainasides() { ?>
 <? }
 add_filter('thematic_belowmainasides', 'childtheme_belowmainasides');
 
-?>
-
-<?php
 function childtheme_favicon() { ?>
-    <link rel="shortcut icon" href="<?php echo bloginfo('stylesheet_directory') ?>/images/favicon.png">
-<?php }
-
+  <link rel="shortcut icon" href="<? echo bloginfo('stylesheet_directory') ?>/images/favicon.png">
+<? }
 add_action('wp_head', 'childtheme_favicon');
+
 ?>

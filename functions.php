@@ -57,7 +57,7 @@ function childtheme_belowmainasides() { ?>
       </li>
       <li><a href="https://handcrafted.freshbooks.com/signup/"><img src="http://www.freshbooks.com/images/banners/freshbooks125x125.gif" /></a></li>
       <li><a href="http://www.highriseHQ.com/?referrer=HANDCRAFTED"><img alt="Highrise" border="0" height="125" src="https://affiliates.37signals.com/images/products/highrise/banner-125x125.png" width="125" /></a></li>
-      <!-- <li><a href="http://www.backpackIT.com/?referrer=HANDCRAFTED"><img alt="Backpack" border="0" height="125" src="https://affiliates.37signals.com/images/products/backpack/banner-125x125.png" width="125" /></a></li> -->
+      <!-- <li><a href="http://graphicriver.net?ref=handcrafted"><img alt="GraphicRiver" border="0" height="125" src="http://envato.s3.amazonaws.com/referrer_adverts/gr_125x125_v1.gif" width="125" /></a></li> -->
       <li><a href="http://www.basecampHQ.com/?referrer=HANDCRAFTED"><img alt="Basecamp" border="0" height="125" src="https://affiliates.37signals.com/images/products/basecamp/banner-125x125.png" width="125" /></a></li>
     </ul>
   </div>

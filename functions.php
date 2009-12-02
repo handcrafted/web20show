@@ -30,6 +30,9 @@ function childtheme_abovemainasides() { ?>
       <li><a href="http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewPodcast?id=79511655"><img src="<?php bloginfo('siteurl'); ?>/wp-content/themes/web20show/images/feed_itunes.png" /></a></li>
       <li><a href="http://feeds.feedburner.com/web20Show"><img src="<?php echo bloginfo('stylesheet_directory') ?>/images/feed_rss.png" /></a></li>
       <li><a href="http://twitter.com/web20show"><img src="<?php echo bloginfo('stylesheet_directory') ?>/images/feed_twitter.png" /></a></li>
+      <li>
+        <a href="http://www.facebook.com/pages/The-Web-20-Show/203485278504"><img src="http://badge.facebook.com/badge/0.0.185239130.png" width="175" height="50" alt="The Web 2.0 Show on Facebook"/></a>
+      </li>
     </ul>
   </div>
 

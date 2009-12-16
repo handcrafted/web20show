@@ -1,3 +1,4 @@
 --- 
+theme: web20show
 ssh_user: mt1
-remote_root: ~/domains/web20show.com/html/wp-content/themes/web20show/
+remote_root: ~/domains/web20show.com/html

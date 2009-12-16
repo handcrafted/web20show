@@ -43,10 +43,7 @@ function childtheme_belowmainasides() { ?>
 
   <div id="childtheme_primary" class="aside child-main-aside">
     <ul class="xoxo vertical-ads">
-      <li><a href="http://graphicriver.net?ref=handcrafted"><img alt="GraphicRiver" border="0" height="125" src="http://envato.s3.amazonaws.com/referrer_adverts/gr_125x125_v1.gif" width="125" /></a></li>
-      <li><a href="https://handcrafted.freshbooks.com/signup/"><img src="http://www.freshbooks.com/images/banners/freshbooks125x125.gif" /></a></li>
-      <li><a href="http://www.highriseHQ.com/?referrer=HANDCRAFTED"><img alt="Highrise" border="0" height="125" src="https://affiliates.37signals.com/images/products/highrise/banner-125x125.png" width="125" /></a></li>
-      <li><a href="http://www.basecampHQ.com/?referrer=HANDCRAFTED"><img alt="Basecamp" border="0" height="125" src="https://affiliates.37signals.com/images/products/basecamp/banner-125x125.png" width="125" /></a></li>
+      <li><a href="http://thechangelog.com/"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/tcl_album_art.png" /></a></li>
       <li>
         <script type="text/javascript">
         Vertical1242735 = false;
@@ -62,6 +59,13 @@ function childtheme_belowmainasides() { ?>
         document.write(unescape("%3Cscript src='"+document.location.protocol+"//s3.buysellads.com/1242735/1242735.js?v="+Date.parse(new Date())+"' type='text/javascript'%3E%3C/script%3E"));
         </script>
       </li>
+      <li><a href="https://handcrafted.freshbooks.com/signup/"><img src="http://www.freshbooks.com/images/banners/freshbooks125x125.gif" /></a></li>
+      <li><a href="http://www.basecampHQ.com/?referrer=HANDCRAFTED"><img alt="Basecamp" border="0" height="125" src="https://affiliates.37signals.com/images/products/basecamp/banner-125x125.png" width="125" /></a></li>
+      <!--
+      <li><a href="http://www.highriseHQ.com/?referrer=HANDCRAFTED"><img alt="Highrise" border="0" height="125" src="https://affiliates.37signals.com/images/products/highrise/banner-125x125.png" width="125" /></a></li>
+      <li><a href="http://graphicriver.net?ref=handcrafted"><img alt="GraphicRiver" border="0" height="125" src="http://envato.s3.amazonaws.com/referrer_adverts/gr_125x125_v1.gif" width="125" /></a></li>
+      <li><a href="http://www.shopify.com/?ref=handcrafted"><img alt="GraphicRiver" border="0" height="125" src="http://wiki.shopify.com/upload/7/7a/Banner-envy-125x125.gif" width="125" /></a></li>
+      -->
     </ul>
   </div>
 
@@ -70,7 +74,17 @@ add_filter('thematic_belowmainasides', 'childtheme_belowmainasides');
 
 function childtheme_favicon() { ?>
   <link rel="shortcut icon" href="<? echo bloginfo('stylesheet_directory') ?>/images/favicon.png">
+  <link href='http://web20show.buzzsprout.com/podcasts/92/artworks_medium.png' rel='image_src' />
 <? }
 add_action('wp_head', 'childtheme_favicon');
+
+// Filter away the default scripts loaded with Thematic
+function childtheme_head_scripts() { ?>
+
+  <script src="<?php bloginfo("stylesheet_directory") ?>/javascript/site.js" type="text/javascript"></script>
+
+<? }
+add_filter('thematic_head_scripts','childtheme_head_scripts');
+
 
 ?>
